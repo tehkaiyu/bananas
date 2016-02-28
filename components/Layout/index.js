@@ -4,10 +4,10 @@ import Navigation from '../Navigation';
 
 function Layout({ children }) {
   return (
-    <div className="Layout">
+    <section className="Layout">
       <Navigation />
       {children}
-    </div>
+    </section>
   );
 }
 
