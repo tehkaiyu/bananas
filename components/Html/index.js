@@ -12,7 +12,7 @@ function Html({ title, description, body }) {
         <meta name="description" content={description || config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css" />
         <script src={'/app.js?' + new Date().getTime()} />
       </head>
       <body>
