@@ -2,25 +2,45 @@
 
 .Navigation {
   display: flex;
+  align-items: stretch;
   flex-direction: row;
-  margin: 2em 0 5em 0;
-  list-style: none;
-  justify-content: flex-end;
-}
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 34px 45px 20px;
 
-.Navigation-item {
-  padding: 0 2em;
-}
+  &--link {
+    margin-left: 36px;
+    padding-bottom: 5px;
+    color: $brand-brown;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
 
-.Navigation-link {
-  padding: 0.5em 1em;
-  color: $brand-color;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
+    &:hover {
+      border-bottom: 3px solid $brand-color;
+      color: $text-color;
+    }
+  }
 
-  &:hover {
-    border-bottom: 3px solid $brand-color;
-    color: $text-color;
+  &--signup {
+    color: $brand-brown;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: $brand-color;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #F3C800;
+    }
   }
 }
+
