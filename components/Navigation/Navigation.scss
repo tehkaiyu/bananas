@@ -10,6 +10,21 @@
   max-width: 1000px;
   padding: 34px 45px 20px;
 
+  &--logo {
+    color: #755F56;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: -25px;
+
+    > .icon-banana {
+      height: 40px;
+      transform: translateY(30%);
+      margin-right: 5px;
+    }
+  }
+
   &--link {
     margin-left: 36px;
     padding-bottom: 5px;

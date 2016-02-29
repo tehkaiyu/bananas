@@ -1,18 +1,20 @@
 import React from 'react';
 import './Navigation.scss';
 import Link from '../Link';
+import Logo from '../Icon/Banana';
 
 function Navigation() {
   return (
     <header className="Navigation">
-      <div className="logo">
-        <a href="">Bananas</a>
-      </div>
+      <a href="/" className="Navigation--logo">
+        <Logo />
+        Bananas
+      </a>
       <nav className="Navigation-menu">
-        <a className="Navigation--link" href="/" onClick={Link.handleClick}>About</a>
-        <a className="Navigation--link" href="/" onClick={Link.handleClick}>Features</a>
-        <a className="Navigation--link" href="/" onClick={Link.handleClick}>Nutrition</a>
-        <a className="Navigation--signup" href="/">Sign up now</a>
+        <a className="Navigation--link" href="/">About</a>
+        <a className="Navigation--link" href="/">Features</a>
+        <a className="Navigation--link" href="/">Nutrition</a>
+        <a className="Navigation--signup" href="/">Join now</a>
       </nav>
     </header>
   );

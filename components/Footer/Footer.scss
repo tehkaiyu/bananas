@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+.Footer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0 45px;
+
+  &-wrapper {
+    background-color: $brand-brown;
+    padding: 15px 0;
+  }
+
+  &-padding {
+    background-color: #fff;
+    padding-top: 100px;
+  }
+
+  &--link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 50px;
+  }
+}

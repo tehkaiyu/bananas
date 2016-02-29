@@ -14,6 +14,20 @@ const Copy = {
       },
     }],
   },
+  Features: {
+    title: 'Unique Experience',
+    subtitle: 'Collaboratively administrate empowered markets and maximize timely deliverables for real-time schemas',
+    features: [
+      'Complete Synergy',
+      'Innovative',
+      'Interactive',
+      'Dynamic Experience',
+      'Black stripes, yellow paint',
+      'Covalent',
+      'Vitamin B6',
+      'Generate Solutions',
+    ],
+  },
 };
 
 export default Copy;
