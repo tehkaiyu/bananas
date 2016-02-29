@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.Main-header {
+  text-align: center;
+  overflow: hidden;
+
+  &--banana {
+    margin-top: 35px;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 300px;
+    width: 105%;
+    bottom: -40px;
+    left: 0;
+    transform: rotate(-3deg);
+  }
+}
