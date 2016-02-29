@@ -4,7 +4,7 @@ node_js:
   - iojs
   - '0.12'
 after_success:
-  - surge -p build --domain bananas.surge.sh
+  - surge -p build --domain itsbananas.club
 matrix:
   allow_failures:
     - node_js: iojs
