@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Copy from '../core/Copy';
 import Header from '../components/Header';
 
 export default class extends Component {
@@ -7,8 +8,8 @@ export default class extends Component {
     return (
       <section>
         <Header
-          title="Sweet, Nutritious and Delicious"
-          subtitle="The key to happiness, it's pretty Bananas"
+          title={Copy.Header.title}
+          subtitle={Copy.Header.subtitle}
         />
       </section>
     );
