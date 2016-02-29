@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import Header from '../components/Header';
 
 export default class extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Home Page</h1>
-        <p>Coming soon.</p>
-      </div>
+      <section>
+        <Header
+          title="Sweet, Nutritious and Delicious"
+          subtitle="The key to happiness, it's pretty Bananas"
+        />
+      </section>
     );
   }
 
