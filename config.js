@@ -1,5 +1,5 @@
 export default {
   title: 'Bananas',
   description: 'It\'s Bananas',
-  googleAnalyticsId: 'UA-XXXXX-X',
+  googleAnalyticsId: 'UA-74511083-1',
 };
