@@ -48,6 +48,6 @@
     "clean": "babel-node --eval \"require('./tools/clean')().catch(err => console.log(err.stack))\"",
     "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
     "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
-    "deploy": "npm build && surge -p build --domain itsbananas.club"
+    "deploy": "npm run build release && surge -p build --domain itsbananas.club"
   }
 }
