@@ -5,9 +5,11 @@
 
   &--banana {
     margin-top: 35px;
-    max-width: 600px;
+    max-width: 100%;
     position: relative;
     z-index: 1;
+    animation: fadeInUp 0.7s ease 0.5s;
+    animation-fill-mode:forwards;
   }
 
   &:after {
@@ -19,5 +21,32 @@
     bottom: -40px;
     left: 0;
     transform: rotate(-3deg);
+    animation: fadeIn 0.7s cubic-bezier(0.07,0.8,0.16,1);
+  }
+}
+
+/*
+ * CSS Animations
+ * -------------------------------------------------------------------------- */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

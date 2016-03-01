@@ -31,6 +31,14 @@ p {
   text-align: center;
   padding: 52px 20px;
   position: relative;
+
+  &.Main-header {
+    min-height: 100vh;
+  }
+}
+
+.Main-header--banana {
+  opacity: 0;
 }
 
 .section--title {
