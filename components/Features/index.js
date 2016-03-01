@@ -23,7 +23,7 @@ export default class extends Component {
           }
         </ul>
         <footer className="Features-footer">
-          <a className="button--join-now" href="">Join Now</a>
+          <a className="button--join-now" href="https://itsbananas.slack.com">Join Now</a>
         </footer>
         <img className="Features-image--drink" src="banana-drink.png" alt="Banana Drink"/>
         <img className="Features-image--peel" src="banana-peel.png" alt="Banana Peel"/>
