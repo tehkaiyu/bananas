@@ -41,6 +41,15 @@ p {
   opacity: 0;
 }
 
+.animicon {
+  position: relative;
+
+  > span {
+    transform: scale3d(0, 0, 0);
+    display: inline-block;
+  }
+}
+
 .section--title {
   color: $title-color;
   font-size: 2.2em;
