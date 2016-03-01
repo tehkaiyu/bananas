@@ -11,6 +11,7 @@
   padding: 34px 45px 20px;
 
   &--logo {
+    position: relative;
     color: #755F56;
     letter-spacing: 1px;
     text-decoration: none;
@@ -20,9 +21,18 @@
 
     > .icon-banana {
       height: 40px;
-      transform: translateY(30%);
+      transform: translateY(23%);
       margin-right: 5px;
     }
+  }
+
+  &--logo-prefix {
+    position: absolute;
+    font-family: 'Brush Script MT', cursive;
+    text-transform: capitalize;
+    color: #DCAB2C;
+    letter-spacing: -0.1px;
+    top: 10px;
   }
 
   &--link {

@@ -54,6 +54,12 @@ p {
   color: $title-color;
   font-size: 2.2em;
   letter-spacing: -0.2px;
+
+  &.animated {
+    opacity: 0;
+    animation: fadeInDown 0.5s cubic-bezier(0.21, 0.12, 0.32, 1.29);
+    animation-fill-mode: forwards;
+  }
 }
 
 .section--subtitle {
@@ -61,4 +67,25 @@ p {
   font-weight: 300;
   max-width: 600px;
   margin: 0 auto 10px;
+
+  &.animated {
+    opacity: 0;
+    animation: fadeInDown 0.4s cubic-bezier(0.21, 0.12, 0.32, 1.29) 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+/*
+ * CSS Animations
+ * -------------------------------------------------------------------------- */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
