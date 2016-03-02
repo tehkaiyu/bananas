@@ -21,9 +21,9 @@ export default class extends Component {
                   {testimonial.quote}
                 </p>
                 <footer className="Testimonials--author">
-                  <span className="Testimonials--author-name">
+                  <cite className="Testimonials--author-name">
                     {testimonial.author.name}
-                  </span>
+                  </cite>
                   <span className="Testimonials--author-image">
                     <img
                       src={`testimonials/${testimonial.author.image}`}
