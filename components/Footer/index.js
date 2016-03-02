@@ -13,7 +13,7 @@ export default class extends Component {
             <nav className="Footer-menu">
               <a className="Footer--link" href="/">About</a>
               <a className="Footer--link" href="/">Features</a>
-              <a className="Footer--link" href="/">Nutrition</a>
+              <a className="Footer--link" href="/events">Events</a>
             </nav>
           </footer>
         </section>

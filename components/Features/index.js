@@ -17,7 +17,8 @@ export default class extends Component {
           {
             this.props.features.map((feature) =>
               <li className="Features--single" key={feature}>
-                <img src="banana-icon.svg" alt="Feature:"/> {feature}
+                <img src="banana-icon.svg" alt="Feature:"/>
+                <span>{feature}</span>
               </li>
             )
           }

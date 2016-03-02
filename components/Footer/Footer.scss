@@ -34,3 +34,13 @@
     }
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .Footer {
+    padding: 0 15px;
+
+    &-menu {
+      display: none;
+    }
+  }
+}

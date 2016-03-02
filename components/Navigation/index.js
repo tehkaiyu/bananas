@@ -16,7 +16,7 @@ export default class extends Component {
         <nav className="Navigation-menu">
           <a className="Navigation--link" href="/">About</a>
           <a className="Navigation--link" href="/">Features</a>
-          <a className="Navigation--link" href="/">Nutrition</a>
+          <a className="Navigation--link" href="/events" onClick={Link.handleClick}>Events</a>
           <AnimateIcon delay={1600}>
             <a className="Navigation--signup" href="https://itsbananas.slack.com">Join Now</a>
           </AnimateIcon>

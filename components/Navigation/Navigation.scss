@@ -80,3 +80,29 @@
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .Navigation {
+    padding: 34px 15px;
+
+    &--logo {
+      width: 40%;
+    }
+
+    &-menu {
+      width: 60%;
+      margin-top: -5px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--link {
+      margin-right: 10px;
+      display: none;
+
+      &:last-child {
+        margin-top: 4px;
+        display: block;
+      }
+    }
+  }
+}
