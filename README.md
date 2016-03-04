@@ -4,6 +4,8 @@
 
 > Static React website for "It's Bananas" group
 
+Hosted [here](http://itsbananas.club)
+
 ### Directory Layout
 
 ```
