@@ -12,6 +12,12 @@ const Copy = {
         name: 'Ajay Dhesikan',
         image: 'ajay.png',
       },
+    }, {
+      quote: 'Love the Slack group name.',
+      author: {
+        name: 'Lauren Watanabe',
+        image: 'ajay.png',
+      },
     }],
   },
   Features: {
