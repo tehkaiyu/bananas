@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import TransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 import './Testimonials.scss';
 
 export default class extends Component {
@@ -10,20 +11,38 @@ export default class extends Component {
 
   constructor(props) {
     super(props);
+    this.animationTime = 1500;
     this.state = {
       testimonialIndex: 0,
       currentTestimonial: props.testimonials[0],
+      toggleDisabled: false,
     };
   }
 
   nextTestimonial = (event) => {
+    const self = this;
     event.preventDefault();
-    this.changeTestimonial(1);
+
+    if (!self.state.toggleDisabled) {
+      self.changeTestimonial(1);
+
+      setTimeout(() =>
+        self.setState({ toggleDisabled: false }),
+      self.animationTime);
+    }
   }
 
   prevTestimonial = (event) => {
+    const self = this;
     event.preventDefault();
-    this.changeTestimonial(-1);
+
+    if (!self.state.toggleDisabled) {
+      self.changeTestimonial(-1);
+
+      setTimeout(() =>
+        self.setState({ toggleDisabled: false }),
+      self.animationTime);
+    }
   }
 
   changeTestimonial = (next) => {
@@ -34,6 +53,7 @@ export default class extends Component {
       this.setState({
         testimonialIndex: index,
         currentTestimonial: this.props.testimonials[index],
+        toggleDisabled: true,
       });
     };
 
@@ -54,12 +74,18 @@ export default class extends Component {
 
   render() {
     const testimonial = this.state.currentTestimonial;
+    const animationTime = this.animationTime;
 
     return (
       <section className="Testimonials page-section">
         <h1 className="section--title">{this.props.title}</h1>
         <h3 className="section--subtitle">{this.props.subtitle}</h3>
-        <article className="Testimonials--block-wrapper">
+        <TransitionGroup
+          className="Testimonials--block-wrapper"
+          component="article"
+          transitionName="Testimonials--fade"
+          transitionEnterTimeout={animationTime}
+          transitionLeaveTimeout={animationTime}>
           <blockquote className="Testimonials--block" key={testimonial.author.name}>
             <p className="Testimonials--quote">
               {testimonial.quote}
@@ -76,7 +102,7 @@ export default class extends Component {
               </span>
             </footer>
           </blockquote>
-        </article>
+        </TransitionGroup>
         <a href=""
           className="Testimonials--prev"
           onClick={ this.prevTestimonial }>
