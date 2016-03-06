@@ -60,3 +60,72 @@
     transform: rotate(-1deg);
   }
 }
+
+.Testimonials--fade-enter {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .Testimonials--quote, .Testimonials--author-name {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  .Testimonials--author-image {
+    opacity: 0;
+  }
+}
+
+.Testimonials--fade-enter.Testimonials--fade-enter-active {
+  .Testimonials--quote {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 300ms ease 500ms, transform 300ms ease 500ms;
+  }
+
+  .Testimonials--author-name {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 300ms ease 600ms, transform 300ms ease 600ms;
+  }
+
+  .Testimonials--author-image {
+    opacity: 1;
+    transition: opacity 500ms ease 1000ms;
+  }
+}
+
+.Testimonials--fade-leave {
+  &:before {
+    background-color: transparent;
+  }
+
+  .Testimonials--quote, .Testimonials--author-name {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .Testimonials--author-image {
+    opacity: 1;
+  }
+}
+
+.Testimonials--fade-leave.Testimonials--fade-leave-active {
+  .Testimonials--quote {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+
+  .Testimonials--author-name {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: opacity 300ms ease 100ms, transform 400ms ease 200ms;
+  }
+
+  .Testimonials--author-image {
+    opacity: 0;
+    transition: opacity 500ms ease 200ms;
+  }
+}
