@@ -2,6 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import TransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 import './Testimonials.scss';
 
+import LeftArrow from '../Icon/LeftArrow';
+import RightArrow from '../Icon/RightArrow';
+
 export default class extends Component {
   static propTypes = {
     title: PropTypes.string,
@@ -101,18 +104,18 @@ export default class extends Component {
                 />
               </span>
             </footer>
+            <a href=""
+              className="Testimonials--prev"
+              onClick={ this.prevTestimonial }>
+              <LeftArrow />
+            </a>
+            <a href=""
+              className="Testimonials--next"
+              onClick={ this.nextTestimonial }>
+              <RightArrow />
+            </a>
           </blockquote>
         </TransitionGroup>
-        <a href=""
-          className="Testimonials--prev"
-          onClick={ this.prevTestimonial }>
-          Prev
-        </a>
-        <a href=""
-          className="Testimonials--next"
-          onClick={ this.nextTestimonial }>
-          Next
-        </a>
       </section>
     );
   }

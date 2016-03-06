@@ -79,6 +79,24 @@ p {
   }
 }
 
+.Testimonials--prev, .Testimonials--next {
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  display: block;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  transition: opacity 0.233s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.icon-left, .icon-right {
+  max-width: 100%;
+}
+
 /*
  * CSS Animations
  * -------------------------------------------------------------------------- */
