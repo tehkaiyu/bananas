@@ -31,7 +31,7 @@ export default class extends Component {
 
       setTimeout(() =>
         self.setState({ toggleDisabled: false }),
-      self.animationTime);
+      self.animationTime + 100);
     }
   }
 
@@ -44,7 +44,7 @@ export default class extends Component {
 
       setTimeout(() =>
         self.setState({ toggleDisabled: false }),
-      self.animationTime);
+      self.animationTime + 100);
     }
   }
 
