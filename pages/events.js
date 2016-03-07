@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from '../components/Header';
+import ComingSoon from '../components/ComingSoon';
 import Footer from '../components/Footer';
 
 export default class extends Component {
@@ -8,10 +8,7 @@ export default class extends Component {
   render() {
     return (
       <section>
-        <Header
-          title="Coming Soon"
-          subtitle="It'll be Bananas"
-        />
+        <ComingSoon />
         <Footer />
       </section>
     );
