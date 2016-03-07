@@ -139,6 +139,18 @@ p {
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .Coming {
+    &--subtitle {
+      font-size: 2em;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10%;
+    }
+  }
+}
+
 /*
  * CSS Animations
  * -------------------------------------------------------------------------- */
