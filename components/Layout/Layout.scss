@@ -97,6 +97,48 @@ p {
   max-width: 100%;
 }
 
+.Coming {
+  min-height: 500px;
+  animation: fadeInUp 0.7s cubic-bezier(0.21, 0.12, 0.32, 1.29);
+  animation-fill-mode: forwards;
+
+  &--subtitle {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 3em;
+    left: 10vw;
+    top: 15%;
+    letter-spacing: 10px;
+  }
+
+  &--title {
+    text-transform: uppercase;
+    font-size: 26vw;
+    color: $brand-color;
+    text-align: center;
+    transform: translateX(-9%);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background: $brand-color;
+    animation: slideOut 1s cubic-bezier(0.690, 0.005, 0.000, 1.005) 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.Footer {
+  &-padding {
+    background-color: #fff;
+    padding-top: 100px;
+  }
+}
+
 /*
  * CSS Animations
  * -------------------------------------------------------------------------- */
@@ -109,5 +151,27 @@ p {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }
