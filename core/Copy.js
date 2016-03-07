@@ -9,14 +9,14 @@ const Copy = {
     testimonials: [{
       quote: 'It\'s Bananas is a terrible name.',
       author: {
-        name: 'Ajay Dhesikan',
-        image: 'ajay.png',
+        name: 'A Guy',
+        image: 'a.png',
       },
     }, {
       quote: 'Love the Slack group name.',
       author: {
-        name: 'Lauren Watanabe',
-        image: 'ajay.png',
+        name: 'Some Girl',
+        image: 'b.png',
       },
     }],
   },
