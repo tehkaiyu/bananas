@@ -1,10 +1,15 @@
 @import '../variables.scss';
 
 .Testimonials {
-  background-color: #fff;
-  overflow: hidden;
   padding-top: 37px;
   position: relative;
+  background: linear-gradient(
+    -1deg,
+    transparent,
+    transparent 10%,
+    #fff 10%,
+    #fff 100%
+  );
 
   &--block-wrapper {
     margin: 45px 0 120px;
@@ -56,17 +61,6 @@
 
   &--next {
     right: -40px;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    background-color: $body-bg;
-    height: 70px;
-    width: 105%;
-    bottom: -35px;
-    left: 0;
-    transform: rotate(-1deg);
   }
 }
 
@@ -142,12 +136,12 @@
 @media (max-width: $screen-sm-min) {
   .Testimonials {
     &--prev {
-      top: 200%;
+      top: 175%;
       left: 35%;
     }
 
     &--next {
-      top: 200%;
+      top: 175%;
       right: 35%;
     }
   }
