@@ -23,34 +23,23 @@ export default class extends Component {
   }
 
   nextTestimonial = (event) => {
-    const self = this;
     event.preventDefault();
-
-    if (!self.state.toggleDisabled) {
-      self.changeTestimonial(1);
-
-      setTimeout(() =>
-        self.setState({ toggleDisabled: false }),
-      self.animationTime + 100);
+    if (!this.state.toggleDisabled) {
+      this.changeTestimonial(1);
     }
   }
 
   prevTestimonial = (event) => {
-    const self = this;
     event.preventDefault();
-
-    if (!self.state.toggleDisabled) {
-      self.changeTestimonial(-1);
-
-      setTimeout(() =>
-        self.setState({ toggleDisabled: false }),
-      self.animationTime + 100);
+    if (!this.state.toggleDisabled) {
+      this.changeTestimonial(-1);
     }
   }
 
   changeTestimonial = (next) => {
     const testimonialIndex = this.state.testimonialIndex;
     const testimonialsLength = this.props.testimonials.length - 1;
+    const resetToggle = () => this.setState({ toggleDisabled: false });
 
     const setTestimonial = (index) => {
       this.setState({
@@ -58,6 +47,8 @@ export default class extends Component {
         currentTestimonial: this.props.testimonials[index],
         toggleDisabled: true,
       });
+
+      setTimeout(resetToggle, this.animationTime + 100);
     };
 
     if (next === 1) {
