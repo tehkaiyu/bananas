@@ -16,13 +16,20 @@ export default class extends Component {
               ©2016 It's Bananas, All Rights Reserved
             </span>
             <nav className="Footer-menu">
-              <ScrollLink to="about" smooth={smoothScroll} duration={500}>
-                <a className="Footer--link" href="/" onClick={Link.handleClick}>About</a>
+              <ScrollLink className="Footer--link"
+                href="/" onClick={Link.handleClick}
+                to="about" smooth={smoothScroll} duration={500}>
+                About
               </ScrollLink>
-              <ScrollLink to="features" smooth={smoothScroll} duration={500}>
-                <a className="Footer--link" href="/" onClick={Link.handleClick}>Features</a>
+              <ScrollLink className="Footer--link"
+                href="/" onClick={Link.handleClick}
+                to="features" smooth={smoothScroll} duration={500}>
+                Features
               </ScrollLink>
-              <a className="Footer--link" href="/events" onClick={Link.handleClick}>Events</a>
+              <a className="Footer--link"
+                href="/events" onClick={Link.handleClick}>
+                Events
+              </a>
             </nav>
           </footer>
         </section>
