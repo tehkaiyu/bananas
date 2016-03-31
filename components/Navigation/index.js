@@ -28,10 +28,6 @@ export default class extends Component {
             to="features" smooth={smoothScroll} duration={500}>
             Features
           </ScrollLink>
-          <a className="Navigation--link"
-            href="/events" onClick={Link.handleClick}>
-            Events
-          </a>
           <AnimateIcon delay={1600}>
             <a className="Navigation--signup" href="https://itsbananas.slack.com">Join Now</a>
           </AnimateIcon>
