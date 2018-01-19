@@ -1,17 +1,14 @@
 import React from 'react'
-import copy from '../core/copy';
-import Header from '../components/Header';
-import Testimonials from '../components/Testimonials';
-import Features from '../components/Features';
-import Footer from '../components/Footer';
-import { Element } from 'react-scroll';
+import copy from 'core/copy'
+import Header from 'components/Header'
+import Testimonials from 'components/Testimonials'
+import Features from 'components/Features'
+import Footer from 'components/Footer'
+import { Element } from 'react-scroll'
 
 const IndexPage = () => (
   <section>
-    <Header
-      title={copy.header.title}
-      subtitle={copy.header.subtitle}
-    />
+    <Header title={copy.header.title} subtitle={copy.header.subtitle} />
     <Element name="about">
       <Testimonials
         title={copy.testimonials.title}

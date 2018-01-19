@@ -1,6 +1,8 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
-
-build
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-npm-debug.log
+.cache/
+# Build directory
+public/
+.DS_Store
+yarn-error.log

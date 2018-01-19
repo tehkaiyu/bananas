@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import mojs from 'mo-js';
+import React, { Component, PropTypes } from 'react'
+import mojs from 'mo-js'
 
 export default class extends Component {
   static propTypes = {
