@@ -1,0 +1,12 @@
+@import '../../core/variables.scss';
+
+.Coming {
+  overflow: hidden;
+  background: linear-gradient(
+    3deg,
+    #fff,
+    #fff 10%,
+    transparent 20%,
+    transparent 100%
+  );
+}

@@ -1,0 +1,45 @@
+@import '../../core/variables.scss';
+
+.Footer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0 45px;
+
+  &-wrapper {
+    background-color: $brand-brown;
+    padding: 15px 0;
+  }
+
+  &--link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 50px;
+    transition: color 0.233s ease;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .Footer {
+    padding: 0 15px;
+
+    &-menu {
+      display: none;
+    }
+
+    &-padding {
+      padding-top: 0;
+    }
+  }
+}
