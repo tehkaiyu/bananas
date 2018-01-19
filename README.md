@@ -12,7 +12,7 @@ Hosted [here](http://itsbananas.club)
 .
 ├── /public/                    # The folder for compiled output
 ├── /node_modules/              # 3rd-party libraries and utilities
-├── /src/                    b  # React.js-based web pages
+├── /src/                       # React.js-based web pages
 │   ├── /compoenents/           # React components
 │   ├── /layouts/               # Gatsby layouts
 │   ├── /pages/                 # Website pages
