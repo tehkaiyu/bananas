@@ -12,7 +12,7 @@ export default class extends Component {
         <section className="Footer-wrapper">
           <footer className="Footer">
             <span className="Footer--copyright">
-              ©2016 It's Bananas, All Rights Reserved
+              ©2018 It's Bananas, All Rights Reserved
             </span>
             <nav className="Footer-menu">
               <Link
