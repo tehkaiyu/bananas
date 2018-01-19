@@ -1,12 +1,12 @@
-import React, { Component, PropTypes } from 'react'
-import bananaHeaderImage from './banana-header.png'
-import './Header.scss'
+import React, { Component, PropTypes } from 'react';
+import bananaHeaderImage from './banana-header.png';
+import './Header.scss';
 
 export default class extends Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
-  }
+  };
 
   render() {
     return (
@@ -19,6 +19,6 @@ export default class extends Component {
           alt="It's Bananas"
         />
       </section>
-    )
+    );
   }
 }

@@ -1,74 +1,74 @@
-import React, { Component, PropTypes } from 'react'
-import TransitionGroup from 'react/lib/ReactCSSTransitionGroup'
-import './Testimonials.scss'
+import React, { Component, PropTypes } from 'react';
+import TransitionGroup from 'react/lib/ReactCSSTransitionGroup';
+import './Testimonials.scss';
 
-import LeftArrow from '../Icon/LeftArrow'
-import RightArrow from '../Icon/RightArrow'
+import LeftArrow from '../Icon/LeftArrow';
+import RightArrow from '../Icon/RightArrow';
 
 export default class extends Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     testimonials: PropTypes.array,
-  }
+  };
 
   constructor(props) {
-    super(props)
-    this.animationTime = 1500
+    super(props);
+    this.animationTime = 1500;
     this.state = {
       testimonialIndex: 0,
       currentTestimonial: props.testimonials[0],
       toggleDisabled: false,
-    }
+    };
   }
 
   nextTestimonial = event => {
-    event.preventDefault()
+    event.preventDefault();
     if (!this.state.toggleDisabled) {
-      this.changeTestimonial(1)
+      this.changeTestimonial(1);
     }
-  }
+  };
 
   prevTestimonial = event => {
-    event.preventDefault()
+    event.preventDefault();
     if (!this.state.toggleDisabled) {
-      this.changeTestimonial(-1)
+      this.changeTestimonial(-1);
     }
-  }
+  };
 
   changeTestimonial = next => {
-    const testimonialIndex = this.state.testimonialIndex
-    const testimonialsLength = this.props.testimonials.length - 1
-    const resetToggle = () => this.setState({ toggleDisabled: false })
+    const testimonialIndex = this.state.testimonialIndex;
+    const testimonialsLength = this.props.testimonials.length - 1;
+    const resetToggle = () => this.setState({ toggleDisabled: false });
 
     const setTestimonial = index => {
       this.setState({
         testimonialIndex: index,
         currentTestimonial: this.props.testimonials[index],
         toggleDisabled: true,
-      })
+      });
 
-      setTimeout(resetToggle, this.animationTime + 100)
-    }
+      setTimeout(resetToggle, this.animationTime + 100);
+    };
 
     if (next === 1) {
       if (testimonialIndex === testimonialsLength) {
-        setTestimonial(0)
+        setTestimonial(0);
       } else {
-        setTestimonial(testimonialIndex + 1)
+        setTestimonial(testimonialIndex + 1);
       }
     } else {
       if (testimonialIndex === 0) {
-        setTestimonial(testimonialsLength)
+        setTestimonial(testimonialsLength);
       } else {
-        setTestimonial(testimonialIndex - 1)
+        setTestimonial(testimonialIndex - 1);
       }
     }
-  }
+  };
 
   render() {
-    const testimonial = this.state.currentTestimonial
-    const animationTime = this.animationTime
+    const testimonial = this.state.currentTestimonial;
+    const animationTime = this.animationTime;
 
     return (
       <section className="Testimonials page-section">
@@ -114,6 +114,6 @@ export default class extends Component {
           </blockquote>
         </TransitionGroup>
       </section>
-    )
+    );
   }
 }

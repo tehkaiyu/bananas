@@ -1,10 +1,10 @@
-import React from 'react'
-import copy from 'core/copy'
-import Header from 'components/Header'
-import Testimonials from 'components/Testimonials'
-import Features from 'components/Features'
-import Footer from 'components/Footer'
-import { Element } from 'react-scroll'
+import React from 'react';
+import copy from 'core/copy';
+import Header from 'components/Header';
+import Testimonials from 'components/Testimonials';
+import Features from 'components/Features';
+import Footer from 'components/Footer';
+import { Element } from 'react-scroll';
 
 const IndexPage = () => (
   <section>
@@ -25,6 +25,6 @@ const IndexPage = () => (
     </Element>
     <Footer />
   </section>
-)
+);
 
-export default IndexPage
+export default IndexPage;

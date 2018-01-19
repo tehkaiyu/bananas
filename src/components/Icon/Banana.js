@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Banana() {
   return (
@@ -362,7 +362,7 @@ function Banana() {
         />
       </g>
     </svg>
-  )
+  );
 }
 
-export default Banana
+export default Banana;

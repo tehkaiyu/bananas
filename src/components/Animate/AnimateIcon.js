@@ -1,25 +1,25 @@
-import React, { Component, PropTypes } from 'react'
-import mojs from 'mo-js'
+import React, { Component, PropTypes } from 'react';
+import mojs from 'mo-js';
 
 export default class extends Component {
   static propTypes = {
     title: PropTypes.string,
     delay: PropTypes.number,
-  }
+  };
 
   componentDidMount() {
     function Animocon(el, options) {
-      this.el = el
-      this.options = Object.assign({}, this.options)
-      Object.assign(this.options, options)
+      this.el = el;
+      this.options = Object.assign({}, this.options);
+      Object.assign(this.options, options);
 
-      this.timeline = new mojs.Timeline()
+      this.timeline = new mojs.Timeline();
 
       for (let i = 0, len = this.options.tweens.length; i < len; ++i) {
-        this.timeline.add(this.options.tweens[i])
+        this.timeline.add(this.options.tweens[i]);
       }
 
-      this.timeline.start()
+      this.timeline.start();
     }
 
     Animocon.prototype.options = {
@@ -29,11 +29,11 @@ export default class extends Component {
           isRunLess: true,
         }),
       ],
-    }
+    };
 
     setTimeout(() => {
-      const el = this.refs.iconWrapper
-      const elspan = el.querySelector('span')
+      const el = this.refs.iconWrapper;
+      const elspan = el.querySelector('span');
 
       new Animocon(el, {
         tweens: [
@@ -81,22 +81,22 @@ export default class extends Component {
               if (progress > 0.3) {
                 const elasticOutProgress = mojs.easing.elastic.out(
                   1.43 * progress - 0.43
-                )
+                );
                 elspan.style.WebkitTransform = elspan.style.transform =
                   'scale3d(' +
                   elasticOutProgress +
                   ',' +
                   elasticOutProgress +
-                  ',1)'
+                  ',1)';
               } else {
                 elspan.style.WebkitTransform = elspan.style.transform =
-                  'scale3d(0,0,1)'
+                  'scale3d(0,0,1)';
               }
             },
           }),
         ],
-      })
-    }, this.props.delay || 100)
+      });
+    }, this.props.delay || 100);
   }
 
   render() {
@@ -104,6 +104,6 @@ export default class extends Component {
       <span className="animicon" ref="iconWrapper">
         <span>{this.props.children}</span>
       </span>
-    )
+    );
   }
 }

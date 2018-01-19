@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function RightArrow() {
   return (
@@ -19,7 +19,7 @@ function RightArrow() {
         />
       </g>
     </svg>
-  )
+  );
 }
 
-export default RightArrow
+export default RightArrow;

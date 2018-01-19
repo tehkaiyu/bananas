@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import AnimateIcon from '../Animate/AnimateIcon'
-import Logo from '../Icon/Banana'
-import { Link } from 'react-scroll'
+import React, { Component } from 'react';
+import AnimateIcon from '../Animate/AnimateIcon';
+import Logo from '../Icon/Banana';
+import { Link } from 'react-scroll';
 
-import './Navigation.scss'
+import './Navigation.scss';
 
 export default class extends Component {
   render() {
-    const smoothScroll = true
+    const smoothScroll = true;
 
     return (
       <header className="Navigation">
@@ -45,6 +45,6 @@ export default class extends Component {
           </AnimateIcon>
         </nav>
       </header>
-    )
+    );
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function LeftArrow() {
   return (
@@ -19,7 +19,7 @@ function LeftArrow() {
         />
       </g>
     </svg>
-  )
+  );
 }
 
-export default LeftArrow
+export default LeftArrow;

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { Link } from 'react-scroll'
+import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 
-import './Footer.scss'
+import './Footer.scss';
 
 export default class extends Component {
   render() {
-    const smoothScroll = true
+    const smoothScroll = true;
 
     return (
       <section className="Footer-padding">
@@ -37,6 +37,6 @@ export default class extends Component {
           </footer>
         </section>
       </section>
-    )
+    );
   }
 }

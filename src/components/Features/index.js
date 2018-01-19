@@ -1,15 +1,15 @@
-import React, { Component, PropTypes } from 'react'
-import bananaDrinkImage from './banana-drink.png'
-import bananaPeelImage from './banana-peel.png'
-import bananaIconImage from './banana-icon.svg'
-import './Features.scss'
+import React, { Component, PropTypes } from 'react';
+import bananaDrinkImage from './banana-drink.png';
+import bananaPeelImage from './banana-peel.png';
+import bananaIconImage from './banana-icon.svg';
+import './Features.scss';
 
 export default class extends Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     features: PropTypes.array,
-  }
+  };
 
   render() {
     return (
@@ -40,6 +40,6 @@ export default class extends Component {
           alt="Banana Peel"
         />
       </section>
-    )
+    );
   }
 }

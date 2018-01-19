@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './ComingSoon.scss'
+import React, { Component } from 'react';
+import './ComingSoon.scss';
 
 export default class extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class extends Component {
         <span className="Coming--subtitle">Events are</span>
         <h1 className="Coming--title">Coming</h1>
       </section>
-    )
+    );
   }
 }
