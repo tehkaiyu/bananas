@@ -45,7 +45,7 @@ $ yarn deploy           # Deploys the project to Surge.sh
 Alternatively, you can build a production release to manually deploy to S3, Firebase, Netlify, and other static hosts. Simply run the command below and copy the generated `build` folder to your static host.
 
 ```shell
-$ yarn build         # Build production release
+$ yarn build            # Build production release
 ```
 
 Made with ♥
