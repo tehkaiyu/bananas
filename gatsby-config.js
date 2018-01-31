@@ -10,7 +10,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'XXX' },
+      options: { trackingId: 'UA-74511083-1' },
     },
     {
       resolve: 'gatsby-plugin-google-fonts',
