@@ -1,6 +1,6 @@
 # It's Bananas
 
-[![Build Status](http://img.shields.io/travis/tehkaiyu/bananas/master.svg?style=flat-square)](https://travis-ci.org/tehkaiyu/bananas)
+[![Build Status](https://travis-ci.org/itzBananas/website.svg?branch=master)](https://travis-ci.org/itzBananas/website)
 
 > Static React website for "itsBananas" group, built with Gatsby and React.js
 
