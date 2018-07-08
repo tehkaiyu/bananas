@@ -1,7 +1,6 @@
 # It's Bananas
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/itzBananas/website.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/itzBananas/website.svg?branch=master)](https://travis-ci.org/itzBananas/website)
 
 > Static React website for "itsBananas" group, built with Gatsby and React.js
