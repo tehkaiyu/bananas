@@ -1,20 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: 'itsBananas',
-    siteUrl: 'https://www.itsBananas.club',
+    siteUrl: 'https://www.itsBananas.club'
   },
   plugins: [
-    'gatsby-plugin-resolve-src',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-74511083-1' },
+      options: { trackingId: 'UA-74511083-1' }
     },
     {
       resolve: 'gatsby-plugin-google-fonts',
-      options: { fonts: ['Open+Sans\:400,600,700,800'] },
+      options: { fonts: ['Open+Sans:400,600,700,800'] }
     },
     {
       resolve: 'gatsby-plugin-favicon',
@@ -30,9 +29,9 @@ module.exports = {
           firefox: true,
           twitter: false,
           yandex: false,
-          windows: false,
-        },
-      },
-    },
-  ],
+          windows: false
+        }
+      }
+    }
+  ]
 };

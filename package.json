@@ -4,34 +4,35 @@
   "version": "1.0.0",
   "author": "Kaiyu Hsu",
   "dependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-favicon": "^3.0.0",
-    "gatsby-plugin-google-analytics": "^1.0.15",
-    "gatsby-plugin-google-fonts": "^0.0.4",
-    "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-resolve-src": "^1.0.0",
-    "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-sitemap": "^1.2.9",
-    "gatsby-plugin-svgr": "^1.0.0",
+    "gatsby": "2.0.8",
+    "gatsby-plugin-favicon": "3.0.0",
+    "gatsby-plugin-google-analytics": "2.0.6",
+    "gatsby-plugin-google-fonts": "0.0.4",
+    "gatsby-plugin-react-helmet": "3.0.0",
+    "gatsby-plugin-sass": "2.0.1",
+    "gatsby-plugin-sitemap": "2.0.1",
     "mo-js": "0.288.2",
-    "react-helmet": "^5.2.0",
-    "react-scroll": "^1.7.6"
+    "node-sass": "^4.9.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "5.2.0",
+    "react-scroll": "1.7.10",
+    "react-transition-group": "^2.4.0"
   },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "format":
-      "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
     "deploy": "surge public/ itsbananas.club",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
-    "eslint-config-prettier": "^3.0.0",
-    "eslint-plugin-prettier": "^2.5.0",
-    "prettier": "^1.10.2"
+    "eslint": "5.0.1",
+    "eslint-config-prettier": "3.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "prettier": "1.10.2"
   }
 }

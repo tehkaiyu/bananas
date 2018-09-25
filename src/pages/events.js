@@ -1,12 +1,13 @@
 import React from 'react';
-import ComingSoon from 'components/ComingSoon';
-import Footer from 'components/Footer';
+import Layout from '../components/layout';
+import ComingSoon from '../components/ComingSoon';
+import Footer from '../components/Footer';
 
 const EventsPage = () => (
-  <section>
+  <Layout>
     <ComingSoon />
     <Footer />
-  </section>
+  </Layout>
 );
 
 export default EventsPage;

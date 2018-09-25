@@ -1,10 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import bananaDrinkImage from './banana-drink.png';
 import bananaPeelImage from './banana-peel.png';
 import bananaIconImage from './banana-icon.svg';
 import './Features.scss';
 
-export default class extends Component {
+export default class extends React.Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,

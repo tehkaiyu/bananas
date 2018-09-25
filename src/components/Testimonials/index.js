@@ -1,11 +1,12 @@
-import React, { Component, PropTypes } from 'react';
-import TransitionGroup from 'react/lib/ReactCSSTransitionGroup';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { TransitionGroup } from 'react-transition-group';
 import './Testimonials.scss';
 
 import LeftArrow from '../Icon/LeftArrow';
 import RightArrow from '../Icon/RightArrow';
 
-export default class extends Component {
+export default class extends React.Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,

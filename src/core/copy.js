@@ -1,5 +1,5 @@
-import a from 'components/Testimonials/a.png';
-import b from 'components/Testimonials/b.png';
+import a from '../components/Testimonials/a.png';
+import b from '../components/Testimonials/b.png';
 
 export default {
   header: {

@@ -1,13 +1,14 @@
 import React from 'react';
-import copy from 'core/copy';
-import Header from 'components/Header';
-import Testimonials from 'components/Testimonials';
-import Features from 'components/Features';
-import Footer from 'components/Footer';
 import { Element } from 'react-scroll';
+import Layout from '../components/layout';
+import copy from '../core/copy';
+import Header from '../components/Header';
+import Testimonials from '../components/Testimonials';
+import Features from '../components/Features';
+import Footer from '../components/Footer';
 
 const IndexPage = () => (
-  <section>
+  <Layout>
     <Header title={copy.header.title} subtitle={copy.header.subtitle} />
     <Element name="about">
       <Testimonials
@@ -24,7 +25,7 @@ const IndexPage = () => (
       />
     </Element>
     <Footer />
-  </section>
+  </Layout>
 );
 
 export default IndexPage;
