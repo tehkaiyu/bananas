@@ -25,28 +25,28 @@ Hosted [here](http://itsbananas.club)
 
 ### Getting Started
 
-Clone the repo, install Node.js modules and run `yarn dev` to serve with hot reload at localhost:8000:
+Clone the repo, install Node.js modules and run `npm run dev` to serve with hot reload at localhost:8000:
 
 ```shell
-$ yarn
-$ yarn dev
+$ npm i
+$ npm run dev
 ```
 
 Then open [http://localhost:8000/](http://localhost:8000/) in your browser.
 
 ### Format
-You can autoformat your code following eslint rules by running `yarn format`
+You can autoformat your code following eslint rules by running `npm run format`
 
 ### How to Deploy
 
 ```shell
-$ yarn deploy           # Deploys the project to Surge.sh
+$ npm run deploy           # Deploys the project to Surge.sh
 ```
 
 Alternatively, you can build a production release to manually deploy to S3, Firebase, Netlify, and other static hosts. Simply run the command below and copy the generated `build` folder to your static host.
 
 ```shell
-$ yarn build            # Build production release
+$ npm run build            # Build production release
 ```
 
-Made with ♥
+Made with hours of frustration
