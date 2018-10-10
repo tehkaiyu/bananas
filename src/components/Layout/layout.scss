@@ -1,7 +1,8 @@
 @import '../../core/normalize.scss';
 @import '../../core/variables.scss';
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: $body-bg;
@@ -18,11 +19,17 @@ body {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 0 10px;
 }
@@ -79,7 +86,8 @@ p {
   }
 }
 
-.Testimonials--prev, .Testimonials--next {
+.Testimonials--prev,
+.Testimonials--next {
   position: absolute;
   top: 50%;
   width: 15px;
@@ -87,13 +95,15 @@ p {
   transform: translateY(-50%);
   opacity: 0.5;
   transition: opacity 0.4s ease;
+  padding: 0;
 
   &:hover {
     opacity: 1;
   }
 }
 
-.icon-left, .icon-right {
+.icon-left,
+.icon-right {
   max-width: 100%;
 }
 
@@ -127,7 +137,7 @@ p {
     right: 0;
     height: 80%;
     background: $brand-color;
-    animation: slideOut 1s cubic-bezier(0.690, 0.005, 0.000, 1.005) 1s;
+    animation: slideOut 1s cubic-bezier(0.69, 0.005, 0, 1.005) 1s;
     animation-fill-mode: forwards;
   }
 }

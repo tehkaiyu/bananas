@@ -1,6 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import copy from '../core/copy';
 import Header from '../components/Header';
 import Testimonials from '../components/Testimonials';

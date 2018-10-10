@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TransitionGroup } from 'react-transition-group';
+// import { TransitionGroup } from 'react-transition-group';
 import './Testimonials.scss';
 
 import LeftArrow from '../Icon/LeftArrow';
@@ -19,69 +19,37 @@ export default class extends React.Component {
     this.state = {
       testimonialIndex: 0,
       currentTestimonial: props.testimonials[0],
-      toggleDisabled: false,
     };
   }
 
-  nextTestimonial = event => {
-    event.preventDefault();
-    if (!this.state.toggleDisabled) {
-      this.changeTestimonial(1);
-    }
-  };
+  changeTestimonial = (next) => {
+    this.setState(({ testimonialIndex }) => {
+      const testimonialLength = this.props.testimonials.length - 1;
+      let nextIndex = testimonialIndex + next;
 
-  prevTestimonial = event => {
-    event.preventDefault();
-    if (!this.state.toggleDisabled) {
-      this.changeTestimonial(-1);
-    }
-  };
-
-  changeTestimonial = next => {
-    const testimonialIndex = this.state.testimonialIndex;
-    const testimonialsLength = this.props.testimonials.length - 1;
-    const resetToggle = () => this.setState({ toggleDisabled: false });
-
-    const setTestimonial = index => {
-      this.setState({
-        testimonialIndex: index,
-        currentTestimonial: this.props.testimonials[index],
-        toggleDisabled: true,
-      });
-
-      setTimeout(resetToggle, this.animationTime + 100);
-    };
-
-    if (next === 1) {
-      if (testimonialIndex === testimonialsLength) {
-        setTestimonial(0);
-      } else {
-        setTestimonial(testimonialIndex + 1);
+      if (next === 1 && nextIndex > testimonialLength) {
+        nextIndex = 0;
       }
-    } else {
-      if (testimonialIndex === 0) {
-        setTestimonial(testimonialsLength);
-      } else {
-        setTestimonial(testimonialIndex - 1);
+
+      if (nextIndex === -1 && nextIndex < 0) {
+        nextIndex = testimonialLength;
       }
-    }
+
+      return {
+        testimonialIndex: nextIndex,
+        currentTestimonial: this.props.testimonials[nextIndex],
+      };
+    });
   };
 
   render() {
     const testimonial = this.state.currentTestimonial;
-    const animationTime = this.animationTime;
 
     return (
       <section className="Testimonials page-section">
         <h1 className="section--title">{this.props.title}</h1>
         <h3 className="section--subtitle">{this.props.subtitle}</h3>
-        <TransitionGroup
-          className="Testimonials--block-wrapper"
-          component="article"
-          transitionName="Testimonials--fade"
-          transitionEnterTimeout={animationTime}
-          transitionLeaveTimeout={animationTime}
-        >
+        <article className="Testimonials--block-wrapper">
           <blockquote
             className="Testimonials--block"
             key={testimonial.author.name}
@@ -98,22 +66,24 @@ export default class extends React.Component {
                 />
               </span>
             </footer>
-            <a
-              href=""
+            <button
+              type="button"
               className="Testimonials--prev"
-              onClick={this.prevTestimonial}
+              onClick={() => this.changeTestimonial(1)}
+              disabled={this.state.toggleDisabled}
             >
               <LeftArrow />
-            </a>
-            <a
-              href=""
+            </button>
+            <button
+              type="button"
               className="Testimonials--next"
-              onClick={this.nextTestimonial}
+              onClick={() => this.changeTestimonial(-1)}
+              disabled={this.state.toggleDisabled}
             >
               <RightArrow />
-            </a>
+            </button>
           </blockquote>
-        </TransitionGroup>
+        </article>
       </section>
     );
   }
