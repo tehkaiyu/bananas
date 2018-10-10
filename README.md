@@ -1,7 +1,8 @@
-# It's Bananas
+[![Greenkeeper badge](https://badges.greenkeeper.io/its-bananas/website.svg)](https://greenkeeper.io/)
+[![Dependency Status](https://david-dm.org/its-bananas/website/status.svg)](https://david-dm.org/its-bananas/website)
+[![Build Status](https://travis-ci.org/its-bananas/website.svg?branch=master)](https://travis-ci.org/its-bananas/website)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/itzBananas/website.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/itzBananas/website.svg?branch=master)](https://travis-ci.org/itzBananas/website)
+# It's Bananas
 
 > Static React website for "itsBananas" group, built with Gatsby and React.js
 
@@ -35,6 +36,7 @@ $ npm run dev
 Then open [http://localhost:8000/](http://localhost:8000/) in your browser.
 
 ### Format
+
 You can autoformat your code following eslint rules by running `npm run format`
 
 ### How to Deploy
