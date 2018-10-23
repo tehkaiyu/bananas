@@ -2,16 +2,15 @@
 [![Dependency Status](https://david-dm.org/its-bananas/website/status.svg)](https://david-dm.org/its-bananas/website)
 [![Build Status](https://travis-ci.org/its-bananas/website.svg?branch=master)](https://travis-ci.org/its-bananas/website)
 
-# It's Bananas
+# ItsBananas
 
-> Static React website for "itsBananas" group, built with Gatsby and React.js
+> Static website for "itsBananas" group, built with Gatsby and React.js
 
-Hosted [here](http://itsbananas.club)
+Can be found at [http://itsbananas.club](http://itsbananas.club)
 
 ### Directory Layout
 
 ```
-.
 ├── /public/                    # The folder for compiled output
 ├── /node_modules/              # 3rd-party libraries and utilities
 ├── /src/                       # React.js-based web pages
