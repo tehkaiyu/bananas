@@ -4,7 +4,7 @@
 
 # ItsBananas
 
-> Static website for "itsBananas" group, built with Gatsby and React.js
+> Static website to advertise the witches of "itsBananas"
 
 Can be found at [http://itsbananas.club](http://itsbananas.club)
 
@@ -49,5 +49,3 @@ Alternatively, you can build a production release to manually deploy to S3, Fire
 ```shell
 $ npm run build            # Build production release
 ```
-
-Made with hours of frustration
