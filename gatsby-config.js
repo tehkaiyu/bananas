@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'itsBananas',
-    siteUrl: 'https://www.itsBananas.club',
+    title: 'itsBananas · There’s more to life than hustle & grind.',
+    description: '',
+    canonicalUrl: 'https://www.itsBananas.club',
+    image: 'https://www.itsBananas.club/images/preview.jpg',
+    organization: {
+      name: 'itsBananas',
+      url: 'https://www.itsBananas.club',
+      logo: 'https://www.itsBananas.club/images/android-chrome-512x512.png',
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
