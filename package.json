@@ -27,7 +27,7 @@
     "gatsby-plugin-sitemap": "2.0.5",
     "node-sass": "4.11.0",
     "prop-types": "15.6.2",
-    "react": "16.8.0",
+    "react": "16.12.0",
     "react-dom": "16.8.0",
     "react-helmet": "5.2.0",
     "react-scroll": "1.7.11",
